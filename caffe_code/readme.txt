@@ -1,0 +1,9 @@
+input data:
+img:        1x3xHxW
+depth_pred: 1x1xHxW
+norm_pred:  1x3xHxW
+label:      1x1xHxW
+depth:      1x1xHxW
+norm:       1x3xHxW
+mask:       1x1xHxW
+semantic:   1x40xHxW
