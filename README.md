@@ -12,9 +12,14 @@ Required CUDA (7.0) + Ubuntu14.04.
 
 For installation, please follow the instructions of [Caffe](https://github.com/BVLC/caffe) and [DeepLab v2](https://bitbucket.org/aquariusjay/deeplab-public-ver2).
 
+### Data Preparation
+1. Download the provided data (https://)
+2. Download the training data (prepared hdf5 data) (https://...)
+3. Download the testing data  (https://..)
+
 ### Usage
 
-1. Clone the repository:
+1. Clone the repository.
 
 2. Build Caffe and matcaffe:
 
@@ -30,14 +35,20 @@ For installation, please follow the instructions of [Caffe](https://github.com/B
    - Download trained models and unzip it. Pretrained model is saved in folder "model/nyu_40/". 
    ```shell
    cd matlabscript
-    run nyu_crop_data_mask_msc.m
+   run nyu_crop_data_mask_msc.m
    ```
-
+   - The result is saved in folder "../result/nyu_40_msc/"
 4. Training
-```shell
-   cd model
-   sh run_train.sh
-   ```
+1. Training data preparation
+   cd matlabscript
+   run generatedata by setting training = true
+   cd ..
+   cd train_data_hdf5_file_generate
+   python generate_hdf5
+   cd ..
+2. Run caffe training
+
+   
 ## Citation
 If you use our code for research, please cite our paper:
 
