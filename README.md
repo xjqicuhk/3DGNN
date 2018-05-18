@@ -26,7 +26,6 @@ For installation, please follow the instructions of [Caffe](https://github.com/B
 
    ```shell
    cd caffe_code
-   vim Makefile.config
    make -j8 && make matcaffe
    ```
 
