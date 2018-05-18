@@ -38,14 +38,15 @@ For installation, please follow the instructions of [Caffe](https://github.com/B
    run nyu_crop_data_mask_msc.m
    ```
    - The result is saved in folder "../result/nyu_40_msc/"
-4. Training
-   -Training data preparation
-      cd matlabscript
-      run generatedata by setting training = true
-      cd ..
-      cd train_data_hdf5_file_generate
-      python generate_hdf5
-      cd ..
+4. Training:
+
+   - Training data preparation
+      - cd matlabscript
+      - run generatedata by setting training = true
+      - cd ..
+      - cd train_data_hdf5_file_generate
+      - python generate_hdf5
+      - cd ..
       We have also provided the training data in folder "traindata/"
    - Run caffe training
 
