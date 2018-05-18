@@ -1,12 +1,12 @@
-training_data = false;
+training_data = true;
 load('./splits.mat');
 if(training_data)
     list = trainNdxs;
     label_path = '../provided_data/label_color/';
-    save_path = '../testdata/nyu_40/traindata/';
+    save_path = '../traindata/nyu_40/';
 else
     list = testNdxs;
-    save_path = '../testdata/nyu_40/testdata/';
+    save_path = '../traindata/nyu_40/traindata_mat/';
 end
 mkdir(save_path);
 

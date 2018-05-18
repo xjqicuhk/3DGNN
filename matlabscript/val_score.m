@@ -1,7 +1,7 @@
 function d = val_score()
 list = load('./splits.mat');
 list = list.testNdxs;
-predict_folder = '../result/nyu_40_msc/';
+predict_folder = '../result/nyu_40/';
 root_folder = '../provided_data/label_color/';
 num_class = 40;
 eps  = 0.0;
@@ -17,11 +17,11 @@ for i = 1:size(list,1)
      imLab(imLab ~= 255) = imLab(imLab ~= 255) + 1;
      imPred = imread([predict_folder num2str(list(i)) '.png']);
      imPred = imPred + 1;
-    
+
     imLab (imLab == 255) = 0;
-    
-    imLab = imLab(45:471, 41:601,:);
-    imPred = imPred(45:471, 41:601,:);
+    %depth valid region
+    imLab = imLab(40:471, 41:601,:);
+    imPred = imPred(40:471, 41:601,:);
     
      [area_intersection(:,i), area_union(:,i)]=intersectionAndUnion(imPred, imLab,num_class);
  end

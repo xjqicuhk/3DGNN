@@ -1,9 +1,9 @@
 %clear all, clc;
 
-addpath(genpath('../caffe_code/matlab'));
+addpath(genpath('/research/leojia2/xjqi/deeplab_lstm_end_3d_knn/matlab'));
 addpath(genpath('./crop_test/'));
 caffe.set_mode_gpu();
-gpu_id = 0;
+gpu_id = 3;
 caffe.set_device(gpu_id);
 result = [];
 
@@ -21,7 +21,7 @@ end
 net = caffe.Net(net_model, net_weights, phase);
 
 %result save folder
-save_png_folder = '../result/nyu_40_msc/';
+save_png_folder = '../result/nyu_40/';
 mkdir(save_png_folder);
 % number of class and cropsize
 num_class = 40;
@@ -48,7 +48,6 @@ list = load('./splits.mat');
 list = list.testNdxs;
 list = unique(list);
 scales = [0.5, 0.8,1.0,1.2,1.5];
-%scales = [1.0];
  for i = 1:1:numel(list)
     
     fprintf(1, 'processing %d (%d)...\n', list(i), numel(list));
@@ -128,6 +127,12 @@ scales = [0.5, 0.8,1.0,1.2,1.5];
    
 end
 caffe.reset_all();
-
-  val_score;
+ 
+ ['evaluation...']
+  iou = val_score;
+  acc = val_accuracy;
+ ['iou:']
+  iou
+  ['accuracy:']
+  acc
 %end
