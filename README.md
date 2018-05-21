@@ -1,5 +1,5 @@
 # 3DGNN
-This is a Caffe implementation of 3DGNN 
+This is the Caffe implementation of [3D Graph Neural Networks for RGBD Semantic Segmentation](http://openaccess.thecvf.com/content_ICCV_2017/papers/Qi_3D_Graph_Neural_ICCV_2017_paper.pdf): 
 
 <img src="./overallpipeline.png"/>
 
