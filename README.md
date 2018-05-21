@@ -57,7 +57,14 @@ For installation, please follow the instructions of [Caffe](https://github.com/B
 ## Citation
 If you use our code for research, please cite our paper:
 
-Xiaojuan Qi, Renjie Liao, Jiaya Jia, Sanja Fidler and Raquel Urtasun. 3D Graph Neural Network for RGBD Semantic Segmentation. In ICCV 2017.
+```
+@inproceedings{qi20173d,
+  title={3D Graph Neural Networks for RGBD Semantic Segmentation},
+  author={Qi, Xiaojuan and Liao, Renjie and Jia, Jiaya and Fidler, Sanja and Urtasun, Raquel},
+  booktitle={ICCV},
+  year={2017}
+}
+```
 
 ## Question
 If you have any question or request about the code and data, please email me at qxj0125@gmail.com . If you need more information for other datasets plesase send email. 
