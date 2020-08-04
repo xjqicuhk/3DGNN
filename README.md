@@ -13,6 +13,8 @@ Required CUDA (7.0) + Ubuntu14.04.
 For installation, please follow the instructions of [Caffe](https://github.com/BVLC/caffe) and [DeepLab v2](https://bitbucket.org/aquariusjay/deeplab-public-ver2).
 
 ### Data Preparation
+Please download the data and model through the google drive link:
+https://drive.google.com/file/d/1AqQA-ipfc80caklR9kyUxunycrZjg7T2/view?usp=sharing
 1. Download the trained model (https://mycuhk-my.sharepoint.com/:u:/g/personal/1155051740_link_cuhk_edu_hk/ETsf3ekhGbxOp1xYKJxv2hQB8I5OCCui86QLvWvK65_5sw?e=KThQe9).
 2. Download the prepared training data (prepared hdf5 data) (https://mycuhk-my.sharepoint.com/:u:/g/personal/1155051740_link_cuhk_edu_hk/EVGJ_xXvtNVCh7spid94AmQB_byhW49i-VH_vqx8oZbrZQ?e=COhKwr).
 3. Download the testing data  (https://mycuhk-my.sharepoint.com/:u:/g/personal/1155051740_link_cuhk_edu_hk/EVdjeNQqnINOj359HN8WXDgBsouAqSoZC1lRgkSbPNo2hA?e=e0w2sO).
